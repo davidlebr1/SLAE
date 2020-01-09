@@ -1,0 +1,6 @@
+personnal notes for shellcoding :
+cdq                               => xor edx
+mul edx                           => xor eax
+lea ecx, [eax]                    => xor ecx
+mov dword [esp-4], 0xffffffff     => push 0xffffffff
+sub esp, 4
